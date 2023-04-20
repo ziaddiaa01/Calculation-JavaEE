@@ -18,6 +18,6 @@ public class CalculationRepositry {
     }
 
     public List<CalculationEntity> selectAllCalculations() {
-        return entityManager.createQuery("select c from Calculation c", CalculationEntity.class).getResultList();
+        return entityManager.createQuery("select c from Calculation c", CalculationEntity.class).getResultList(); // select all columns 
     }
 }
