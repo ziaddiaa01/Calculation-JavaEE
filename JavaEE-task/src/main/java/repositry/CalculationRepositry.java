@@ -13,9 +13,6 @@ public class CalculationRepositry {
     @PersistenceContext
     private EntityManager entityManager;
 
-    public CalculationRepositry() {
-    }
-
     public void insert(CalculationEntity calc) {
         entityManager.persist(calc);
     }
